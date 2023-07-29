@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Map } from 'react-amap';
+// import { Map } from 'react-amap';
 import { Amap, Marker } from '@amap/amap-react';
 
 export default function Home() {
