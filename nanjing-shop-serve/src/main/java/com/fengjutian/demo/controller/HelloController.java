@@ -2,8 +2,8 @@ package com.fengjutian.demo.controller;
 
 import org.springframework.stereotype.Controller;
 
-@Controller
-public class HelloController(){
+@RestController
+public class HelloController() {
 
     @GetMapping("demo")
     public String demo(){
