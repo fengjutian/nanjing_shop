@@ -3,17 +3,17 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/nj_shop?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/nj_shop?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
     username: root
-    password: root
+    password: fengjutian
 mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml
   type-aliases-package: com.fengjutian.demo.entity
-  configuration:
-    map-underscore-to-camel-case: true
-logging:
-  level:
-    com:
-      sac:
-        demo:
-          mapper : debug
+#  configuration:
+#    map-underscore-to-camel-case: true
+#logging:
+#  level:
+#    com:
+#      sac:
+#        demo:
+#          mapper : debug
