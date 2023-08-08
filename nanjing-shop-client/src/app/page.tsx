@@ -1,11 +1,16 @@
+'use client'
 import Image from 'next/image'
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 // import { Map } from 'react-amap';
 import { Amap, Marker } from '@amap/amap-react';
+// import { createContext } from 'react'
+
+// const Context = createContext()
 
 export default function Home() {
   return (
+    
     <div style={{ width: '100%', height: '400px' }}>
       <Amap
         mapStyle="amap://styles/whitesmoke"
