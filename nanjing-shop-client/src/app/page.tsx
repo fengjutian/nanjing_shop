@@ -1,24 +1,24 @@
 'use client'
 import Image from 'next/image'
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import { Map } from 'react-amap';
-import { Amap, Marker } from '@amap/amap-react';
-// import { createContext } from 'react'
+import { Amap, Marker, config as AmapReactConfig } from '@amap/amap-react';
 
-// const Context = createContext()
+AmapReactConfig.version = '2.0'; // 默认2.0，这里可以不修改
+AmapReactConfig.key = 'aeb8ce908e19d3dfc81ca9bc22930b73';
+AmapReactConfig.plugins = [
+  'AMap.ToolBar',
+  'AMap.MoveAnimation',
+];
 
 export default function Home() {
   return (
-    
-    <div style={{ width: '100%', height: '400px' }}>
+    <div style={{ width: '100%', height: '100vh' }}>
       <Amap
         mapStyle="amap://styles/whitesmoke"
         zoom={15}
-        center={[116.473179, 39.993169]}
+        center={[118.784251,32.041918]}
       >
         <Marker
-          position={[116.473179, 39.993169]}
+          position={[118.784251,32.041918]}
           label={{
             content: 'Hello, AMap-React!',
             direction: 'bottom',
@@ -28,26 +28,3 @@ export default function Home() {
     </div>
   );
 }
-
-// export default function Home() {
-//   return (
-//     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-//       {/* <Map amapkey='3f46074b02e9ae77c705e5280dd771d6' version='v5' ></Map> */}
-
-//       <Amap
-//         mapStyle="amap://styles/whitesmoke"
-//         zoom={15}
-//         center={[116.473179, 39.993169]}
-//       >
-//         <Marker
-//           position={[116.473179, 39.993169]}
-//           label={{
-//             content: 'Hello, AMap-React!',
-//             direction: 'bottom',
-//           }}
-//         />
-//       </Amap>
- 
-//     </main>
-//   )
-// }
