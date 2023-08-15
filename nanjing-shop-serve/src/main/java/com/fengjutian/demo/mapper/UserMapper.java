@@ -9,4 +9,8 @@ public interface UserMapper {
     int insertUser(User user);
 
     User getByUserNameAndPassword(User user);
+
+    int delUser(User user);
+
+    int updateUser(User user);
 }
