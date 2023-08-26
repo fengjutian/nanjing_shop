@@ -11,6 +11,4 @@
         where user_name = #{userName}
         and password = #{password}
     </select>
-
-    
 </mapper>

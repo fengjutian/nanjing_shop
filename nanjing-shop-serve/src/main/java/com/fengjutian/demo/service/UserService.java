@@ -18,4 +18,12 @@ public class UserService {
     public User getByUserNameAndPassword(User user) {
         return userMapper.getByUserNameAndPassword(user);
     }
+
+    public int delUser(User user) {
+        return userMapper.delUser(user);
+    }
+
+    public int updateUser(User user) {
+        return userMapper.updateUser(user);
+    }
 }
