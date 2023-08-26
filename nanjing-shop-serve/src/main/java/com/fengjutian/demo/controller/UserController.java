@@ -3,6 +3,7 @@ package com.fengjutian.demo.controller;
 import com.fengjutian.demo.entity.Response;
 import com.fengjutian.demo.entity.User;
 import com.fengjutian.demo.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
