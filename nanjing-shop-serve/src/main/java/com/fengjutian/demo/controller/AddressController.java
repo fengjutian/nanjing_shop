@@ -25,6 +25,18 @@ public class AddressController {
         }
     }
 
+    @PostMapping("address/del")
+    public Response delAddress(@RequestBody Address address) {
+        try {
+            int result = addressService.delAddress(address);
+            return Response.success(result);
+        } catch(Exception e) {
+            return Response.failure(500, String.valueOf(e));
+        }
+    }
+
+
+
 
 
 }

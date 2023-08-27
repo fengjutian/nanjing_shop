@@ -4,4 +4,8 @@
     <insert id="insertAddress" parameterType="Address" useGeneratedKeys="true" keyProperty="id">
         insert into address (title, address, img_url, phone, point) values (#{title}, #{address}, #{img_url}, #{phone}, #{point})
     </insert>
+
+    <delete id="delAddress" parameterType="Address">
+        delete from address where id = #{id}
+    </delete>
 </mapper>
